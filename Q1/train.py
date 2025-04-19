@@ -272,22 +272,22 @@ def main():
     # Run experiments
     results = {}
     
-    # print("Running patch size experiments...")
-    # results['patch_size'] = run_patch_size_experiment()
+    print("Running patch size experiments...")
+    results['patch_size'] = run_patch_size_experiment()
     
-    # print("\nRunning hyperparameter experiments...")
-    # results['hyperparameter'] = run_hyperparameter_experiment()
+    print("\nRunning hyperparameter experiments...")
+    results['hyperparameter'] = run_hyperparameter_experiment()
     
-    # print("\nRunning augmentation experiments...")
-    # results['augmentation'] = run_augmentation_experiment()
+    print("\nRunning augmentation experiments...")
+    results['augmentation'] = run_augmentation_experiment()
     
     print("\nRunning positional embedding experiments...")
     results['positional_embedding'] = run_positional_embedding_experiment()
     
     # Save results locally
-    # results_file = os.path.join(RESULTS_DIR, 'experiment_results.json')
-    # with open(results_file, 'w') as f:
-    #     json.dump(results, f, indent=4)
+    results_file = os.path.join(RESULTS_DIR, 'experiment_results.json')
+    with open(results_file, 'w') as f:
+        json.dump(results, f, indent=4)
 
 if __name__ == '__main__':
     main() 
