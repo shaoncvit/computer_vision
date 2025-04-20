@@ -1,7 +1,7 @@
-# Vision Transformer (ViT) Analysis
+# Differential Vision Transformer (ViT) Analysis
 
 ## Overview
-This project implements and analyzes various aspects of Vision Transformers (ViT), including different patch sizes, positional embeddings, model configurations, and data augmentation techniques.
+This project implements and analyzes various aspects of Differential Vision Transformers (ViT), including different patch sizes, positional embeddings, model configurations, and data augmentation techniques.
 
 ## 1. Patch Size Analysis
 
